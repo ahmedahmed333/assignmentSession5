@@ -29,11 +29,19 @@
             //Console.WriteLine(book.Title);
             #endregion
             #region Question04
-            Book book = new Book();
+            //Book book = new Book();
 
-            book.Genre = Genre.Science;
-            Console.WriteLine(book.Genre); //Science
+            //book.Genre = Genre.Science;
+            //Console.WriteLine(book.Genre); //Science
             #endregion
+
+            #region Question05
+
+            Console.WriteLine((int)Genre.Fiction);//0
+            Console.WriteLine((int)Genre.NonFiction);//1
+            Console.WriteLine((int)Genre.Science);//2
+            #endregion
+
 
         }
     }
