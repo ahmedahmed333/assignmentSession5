@@ -1,10 +1,69 @@
 ﻿namespace assignmentSession5
 {
+    enum Genre
+    {
+        Fiction,
+        NonFiction,
+        Science
+    }
     internal class Program
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            #region Question01
+            //Book book = new Book();
+            //Console.WriteLine(book.password);// cannot access password because it is private . 
+            //// Private members can only be accessed from inside the Book class.
+
+            #endregion
+            #region Question02
+            //Book book = new Book();
+            //Console.WriteLine(book.copiesInStock); // print 5, It compiles because copiesInStock is internal,
+            //                                       // and Main is in he same assembly
+            #endregion
+            #region Question03
+            //Book book = new Book();
+            //book.Title = "MyTitle";
+            //Console.WriteLine(book.Title);
+            #endregion
+            #region Question04
+            //Book book = new Book();
+
+            //book.Genre = Genre.Science;
+            //Console.WriteLine(book.Genre); //Science
+            #endregion
+            #region Question05
+
+            //Console.WriteLine((int)Genre.Fiction);//0
+            //Console.WriteLine((int)Genre.NonFiction);//1
+            //Console.WriteLine((int)Genre.Science);//2
+            #endregion
+            #region Question06
+            //int genreNumber = 1;
+            //Console.WriteLine((Genre)genreNumber);
+            #endregion
+            #region Question07
+            //Genre genre = Genre.Fiction;
+            //genre.ToString();
+            //Console.WriteLine(genre.ToString());
+            #endregion
+            #region Question08
+            //string genreText = "Science";
+            //var res = Enum.Parse(typeof(Genre), genreText);
+
+            //Console.WriteLine(res); //Science
+            #endregion
+            #region Question09
+            string genreText = "Mystery";
+            bool res = Enum.TryParse(genreText, out Genre genre);
+
+            Console.WriteLine(res ? genre : "Unknown genre"); //Unknown genre , because not a valid Genre value.
+
+            #endregion
+
+
         }
     }
 }
