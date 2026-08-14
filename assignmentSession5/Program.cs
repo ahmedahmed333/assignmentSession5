@@ -49,14 +49,20 @@
             //genre.ToString();
             //Console.WriteLine(genre.ToString());
             #endregion
-
-
             #region Question08
-            string genreText = "Science";
-            var res = Enum.Parse(typeof(Genre), genreText);
+            //string genreText = "Science";
+            //var res = Enum.Parse(typeof(Genre), genreText);
 
-            Console.WriteLine(res); //Science
+            //Console.WriteLine(res); //Science
             #endregion
+            #region Question09
+            string genreText = "Mystery";
+            bool res = Enum.TryParse(genreText, out Genre genre);
+
+            Console.WriteLine(res ? genre : "Unknown genre"); //Unknown genre , because not a valid Genre value.
+
+            #endregion
+
 
         }
     }
