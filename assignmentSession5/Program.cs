@@ -40,10 +40,15 @@
             //Console.WriteLine((int)Genre.NonFiction);//1
             //Console.WriteLine((int)Genre.Science);//2
             #endregion
-
             #region Question06
-            int genreNumber = 1;
-            Console.WriteLine((Genre)genreNumber);
+            //int genreNumber = 1;
+            //Console.WriteLine((Genre)genreNumber);
+            #endregion
+
+            #region Question07
+            Genre genre = Genre.Fiction;
+            genre.ToString();
+            Console.WriteLine(genre.ToString());
             #endregion
 
         }
