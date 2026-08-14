@@ -44,11 +44,18 @@
             //int genreNumber = 1;
             //Console.WriteLine((Genre)genreNumber);
             #endregion
-
             #region Question07
-            Genre genre = Genre.Fiction;
-            genre.ToString();
-            Console.WriteLine(genre.ToString());
+            //Genre genre = Genre.Fiction;
+            //genre.ToString();
+            //Console.WriteLine(genre.ToString());
+            #endregion
+
+
+            #region Question08
+            string genreText = "Science";
+            var res = Enum.Parse(typeof(Genre), genreText);
+
+            Console.WriteLine(res); //Science
             #endregion
 
         }
